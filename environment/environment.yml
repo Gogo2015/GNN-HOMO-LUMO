@@ -1,4 +1,4 @@
-name: gnn-mol
+name: dl-netrunners
 channels:
   - pytorch
   - nvidia
