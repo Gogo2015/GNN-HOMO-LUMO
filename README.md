@@ -65,6 +65,20 @@ tail -f logs/baseline_<jobid>.out
 
 ---
 
+## Comparing Models
+
+After both jobs finish, evaluate and compare the two best checkpoints on the validation set:
+
+```bash
+python3 -m src.test \
+    --gcn_config configs/gcn_baseline.yml \
+    --vn_config  configs/virtual_node.yml
+```
+
+This prints a side-by-side MAE table for the GCN baseline and the virtual node model, and reports whether each hits the target of < 0.12 eV. Checkpoint paths default to `best_gcn.pt` / `best_vn.pt` in the checkpoint directory; override with `--gcn_checkpoint` / `--vn_checkpoint`.
+
+---
+
 ## Project Layout
 
 ```
@@ -79,6 +93,7 @@ jobs/
 src/
   download_data.py       # dataset download
   train.py               # training + validation loop
+  test.py                # evaluate + compare GCN vs virtual node
   utils.py               # seed, config, checkpoint helpers
   models/
     gnn.py               # AtomEncoder + GINELayers + MLP head
@@ -98,6 +113,7 @@ src/
 | Virtual node (`virtual_node.py`) | Lead | | | |
 | Top-level model (`gnn.py`) | Lead | | | |
 | Training loop (`train.py`) | Lead | | | |
+| Test / submission (`test.py`) | Lead | | | |
 | Experiment runs | | | | |
 | Hyperparameter search | | | | |
 | Dataset EDA + figures | | | | |
