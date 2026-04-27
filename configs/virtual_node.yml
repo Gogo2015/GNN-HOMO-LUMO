@@ -1,7 +1,7 @@
 hidden_dim: 300
 num_layers: 5
 dropout: 0.0
-use_virtual_node: false
+use_virtual_node: true
 lr: 0.001
 batch_size: 256
 epochs: 100
