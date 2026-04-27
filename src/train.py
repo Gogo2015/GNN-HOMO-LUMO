@@ -1,10 +1,3 @@
-"""
-Training entry point. Supports resuming from checkpoint for multi-job runs on PACE.
-
-Usage:
-    python3 -m src.train --config configs/gcn_baseline.yml
-    python3 -m src.train --config configs/gcn_baseline.yml --resume  # continue after 8h job
-"""
 import argparse
 from pathlib import Path
 
