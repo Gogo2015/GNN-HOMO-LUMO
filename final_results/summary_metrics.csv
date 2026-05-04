@@ -1,0 +1,3 @@
+model,checkpoint_epoch,checkpoint_saved_val_mae,recomputed_val_mae
+Baseline GINE,5,0.14213433861732483,0.14213433861732483
+Virtual Node GINE,3,0.14870400726795197,0.14870400726795197
