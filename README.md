@@ -105,23 +105,28 @@ src/
 
 ## Contributions
 
-| Component | Gaurav | Kapil | Kartikey | Archith |
-|---|---|---|---|---|
-| Repo + environment setup | Lead | | | |
-| Data pipeline (`download_data.py`) | Lead | | | |
-| GIN layers (`layers.py`) | Lead | | | |
-| Virtual node (`virtual_node.py`) | Lead | | | |
-| Top-level model (`gnn.py`) | Lead | | | |
-| Training loop (`train.py`) | Lead | | | |
-| Test / submission (`test.py`) | Lead | | | |
-| Experiment runs | | | | |
-| Hyperparameter search | | | | |
-| Dataset EDA + figures | | | | |
-| Results plots & tables | | | | |
-| Introduction | | | | |
-| Related work | | | | |
-| Methodology | | | | |
-| Experiments writeup | | | | |
-| Discussion / conclusion | | | | |
-| Presentation slides | | | | |
-| README | Lead | | | |
+| Component | Gaurav | Kapil | Archith |
+| :--- | :---: | :---: | :---: |
+| Repo + environment setup | | Lead | |
+| Data pipeline (`download_data.py`) | | | Lead |
+| GIN layers (`layers.py`) | Lead | | |
+| Virtual node (`virtual_node.py`) | Lead | | |
+| Top-level model (`gnn.py`) | Lead | | |
+| Training loop (`train.py`) | Lead | | |
+| Test / submission (`test.py`) | | | Lead |
+| Experiment runs | Lead | Lead | Lead |
+| Hyperparameter search | Lead | Lead | Lead |
+| Dataset EDA + figures | | | Lead |
+| Results plots & tables | | Lead | |
+| Introduction | | Lead | |
+| Related work | Lead | | |
+| Methodology | Lead | | |
+| Experiments writeup | | Lead | |
+| Discussion / conclusion | | | Lead |
+| Presentation slides | Lead | Lead | Lead |
+| README | Lead | Lead | Lead |
+
+## References
+1. Gilmer, J., et al. (2017). Neural Message Passing for Quantum Chemistry. ICML.
+2. Alon, U., & Yahav, E. (2021). On the bottleneck of graph neural networks and its practical implications. ICLR.
+3. Hu, W., et al. (2021). OGB-LSC: A large-scale challenge for machine learning on graphs. NeurIPS.
